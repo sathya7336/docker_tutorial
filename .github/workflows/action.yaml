@@ -1,9 +1,9 @@
 name: Build and deploy container app
 
 on:
-  push:
+  pull_request:
     branches:
-      - python-img
+      - action
   workflow_dispatch:
 
 jobs:
@@ -33,5 +33,5 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: sathya1082/latest${{ github.sha }}
+        tags: sathya1082/pyserverv1${{ github.sha }}
         file: ./doc_workshop/Dockerfile
