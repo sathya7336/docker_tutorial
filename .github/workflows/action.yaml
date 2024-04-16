@@ -33,5 +33,5 @@ jobs:
       uses: docker/build-push-action@v3
       with:
         push: true
-        tags: sathya1082/pyserver-GH${{ github.sha }}
+        tags: sathya1082/pyserverv1${{ github.sha }}
         file: ./doc_workshop/Dockerfile
