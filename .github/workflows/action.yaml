@@ -3,7 +3,7 @@ name: Build and deploy container app
 on:
   push:
     branches:
-      - python-img
+      - action
   workflow_dispatch:
 
 jobs:
